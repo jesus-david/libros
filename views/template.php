@@ -261,13 +261,22 @@
 		<!--begin::Global App Bundle(used by all pages) -->
 		<script src="views/assets/app/bundle/app.bundle.js" type="text/javascript"></script>
 
+		
+		<?php 
+			if($_GET["action"] == "listUsers"){
+		?>
 		<script src="views/assets/js/plugin.bundle.js" type="text/javascript"></script>
 		    	   <script src="views/assets/js/scripts.bundle.js" type="text/javascript"></script>
-				<!--end::Global Theme Bundle -->
+	<!--end::Global Theme Bundle -->
 
-        
-                    <!--begin::Page Scripts(used by this page) -->
-                            <script src="views/assets/js/list-datatable.js" type="text/javascript"></script>
+
+		<!--begin::Page Scripts(used by this page) -->
+				<script src="views/assets/js/list-datatable.js" type="text/javascript"></script>
+		<?php
+			}
+		?>
+			
+	
 
 
 
